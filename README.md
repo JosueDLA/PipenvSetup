@@ -51,6 +51,12 @@ If you want to exit the pipenv shell, you can use:
 Exit
 ```
 
+If you want to create the requirements.txt of a virtual environment you use:
+
+```bash
+pipenv lock -r > requirements.txt
+```
+
 ## CodeRunner
 If you try running your project with code runner it will create an import request error. This is because code runner is trying to run your project with the default python interpreter.
 The python extension for VS Code automatically looks for interpreters on the following location:
